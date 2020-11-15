@@ -69,5 +69,22 @@ Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué 
 
 
 ### EJERCICIO-3
+#### ***image into b/w***
+
+De igual modo que en el caso anterior, busqué en internet que comando nos permitía usar *ffmpeg* para poder binarizar la imagen con color blanco y negro tal y como se pedía en el enunciado b/w (black/white). Para ello utilizé el comando que hacía referencia a un filtro llamado *threshold" que permite binarizar la imagen: *https://ffmpeg.org/ffmpeg-filters.html#threshold* -> "*ffmpeg -i 320_240_original.png -f lavfi -i color=gray -f lavfi -i color=black -f lavfi -i color=white -lavfi threshold b_w.png*"
+<p>A continuación muestro los resultados: </p>
+
+##### **Comando + Terminal**
+<p align="center">
+  <img align="center" src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="400"/>
+</p>
+
+##### **Resultados**
+
+<p align="center">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original.png" width="500">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original_100x100.png" width="250">
+</p>
+
 ### EJERCICIO-4
 ### EJERCICIO-5
