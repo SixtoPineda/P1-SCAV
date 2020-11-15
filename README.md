@@ -1,12 +1,12 @@
-#***P1-SCAV***
+# ***P1-SCAV***
 SCAV: P1-JPEG
 
-##**EJERCICIOS**
+## **EJERCICIOS**
 
 [TOC]
 
-###EJERCICIO-1
-####**RGB-&-YUV**
+### EJERCICIO-1
+#### **RGB-&-YUV**
 ```python
 import numpy as np
 
@@ -41,7 +41,7 @@ print("\nYUB(","{:.1f}".format(y),",",u,",",v,"), en RGB: R = ", "{:.1f}".format
 
 ```
 
-###EJERCICIO-2
-###EJERCICIO-3
-###EJERCICIO-4
-###EJERCICIO-5
+### EJERCICIO-2
+### EJERCICIO-3
+### EJERCICIO-4
+### EJERCICIO-5
