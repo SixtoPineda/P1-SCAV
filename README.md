@@ -10,9 +10,10 @@
 Para realizar este ejericio me basé en los cálculos propuestos por la dispositiva 40 de la teoria 2 sobre MPEG y MPEG-2. 
 Únicamente pasamos el valor RGB o YUV a la función, según la conversión que queramos realizar y dentro realizamos los cálculos necesarios para obtener la conversión correctamente. Finalmente las funciones devuelven la array con esl resultado correspondiente. 
 
-![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/result.png)
+![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/yuv_rgb.png)
+> Diapo 40, teoría 2 (MPEG y MPEG-2).
 
-> Follow your heart.
+
 
 ```python
 import numpy as np
@@ -46,6 +47,9 @@ r, g, b= YUV2RGB(yuv)
 print("\nYUB(","{:.1f}".format(y),",",u,",",v,"), en RGB: R = ", "{:.1f}".format(r), "  G = ","{:.1f}".format(g),"  B = ", "{:.1f}".format(b),"\n" )
 
 ```
+![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/result.png)
+> Resultado.
+
 
 ### EJERCICIO-2
 ### EJERCICIO-3
