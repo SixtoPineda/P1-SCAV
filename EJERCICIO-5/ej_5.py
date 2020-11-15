@@ -24,6 +24,9 @@ im_DCT = dct2(im)
 #IDCT
 im_IDCT = idct2(im_DCT)
 
+#comprobación de que se asemejan ambas imágenes
+assert(np.allclose(im, im_IDCT) == True)
+
 # plot de la imagen original y la reconstruida
 plt.gray()
 plt.subplot(121), plt.imshow(im), plt.axis('off'), plt.title('Original image', size=20)
