@@ -69,7 +69,7 @@ Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué 
 
 
 ### EJERCICIO-3
-#### ***image into b/w***
+#### ***Image into b/w***
 
 De igual modo que en el caso anterior, busqué en internet que comando nos permitía usar *ffmpeg* para poder binarizar la imagen con color blanco y negro tal y como se pedía en el enunciado b/w (black/white). Para ello utilizé el comando que hacía referencia a un filtro llamado *threshold" que permite binarizar la imagen: *https://ffmpeg.org/ffmpeg-filters.html#threshold* -> "*ffmpeg -i 320_240_original.png -f lavfi -i color=gray -f lavfi -i color=black -f lavfi -i color=white -lavfi threshold b_w.png*"
 <p>A continuación muestro los resultados: </p>
@@ -87,4 +87,36 @@ De igual modo que en el caso anterior, busqué en internet que comando nos permi
 </p>
 
 ### EJERCICIO-4
+#### ***Run-lenght encoding***
+
+<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante *ollections.OrderedDict.fromkeys(string, 0)* procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string.<br>Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función.<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función. </p>
+
+```python
+# importing the collections
+import collections
+
+
+def run_length_encoding(string):
+   dicc = collections.OrderedDict.fromkeys(string, 0)
+   for char in string:
+      # + 1 cada vez que aparece ese carcater en la string
+      dicc[char] += 1
+   encoded_string = ""
+   # recorremos el diccionario según el símbolo (key) y el número de veces que aparece (value)
+   for key, value in dicc.items():
+       # pasamos el enetero(int) a tipo string(str) para crear el output con la string resultante
+      encoded_string += key + str(value) # Ejemplo: dicc = "{'w':4}" output = w4
+
+   return (encoded_string)
+
+
+# creamos la string a codificar
+string = "F.C.BBBBaaaarccceellooonnaa"
+# llamamos a la funcion
+print("\nString: ", string, "\n\nRun length encoding resutl: ",run_length_encoding(string), "\n")
+```
+![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-4/result_4.png)
+> Resultado.
+
+
 ### EJERCICIO-5
