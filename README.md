@@ -1,4 +1,4 @@
-# ***P1-SCAV: P1-JPEG***
+# ***SCAV: P1-JPEG***
 
 ## **EJERCICIOS**
 
