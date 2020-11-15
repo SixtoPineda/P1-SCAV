@@ -142,6 +142,6 @@ plt.show()
 ```
 ##### **Resultados**
 <p align="center">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/original.png" width="350">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/Reconstructed_image(DCT%2BIDCT).png" width="350">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/original.png" width="300">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/Reconstructed_image(DCT%2BIDCT).png" width="500">
 </p>
