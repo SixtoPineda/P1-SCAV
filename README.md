@@ -11,11 +11,9 @@ Para realizar este ejericio me basé en los cálculos propuestos por la disposit
 Únicamente pasamos el valor RGB o YUV a la función, según la conversión que queramos realizar y dentro realizamos los cálculos necesarios para obtener la conversión correctamente. Finalmente las funciones devuelven la array con esl resultado correspondiente. 
 
 <p align="center">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/rgb_yuv.png" width="500" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/rgb_yuv.png" width="600" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
 </p>
-
-![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/rgb_yuv.png)
-> .
+> Diapo 40, teoría 2 (MPEG y MPEG-2).
 
 
 
