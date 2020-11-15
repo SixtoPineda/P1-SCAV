@@ -89,7 +89,7 @@ De igual modo que en el caso anterior, busqué en internet que comando nos permi
 ### EJERCICIO-4
 #### ***Run-lenght encoding***
 
-<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante *ollections.OrderedDict.fromkeys(string, 0)* procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string.<br>Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función.<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función. </p>
+<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante <em>ollections.OrderedDict.fromkeys(string, 0)</em> procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string (6).Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función (9).<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función (14). </p>
 
 ```python
 # importing the collections
@@ -115,7 +115,7 @@ string = "F.C.BBBBaaaarccceellooonnaa"
 # llamamos a la funcion
 print("\nString: ", string, "\n\nRun length encoding resutl: ",run_length_encoding(string), "\n")
 ```
-![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-4/result_4.png)
+![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-4/result.png)
 > Resultado.
 
 
