@@ -2,10 +2,8 @@
 
 ## **EJERCICIOS**
 
-[TOC]
-
 ### EJERCICIO-1
-#### **RGB-&-YUV**
+#### ***RGB-&-YUV***
 
 Para realizar este ejericio me basé en los cálculos propuestos por la dispositiva 40 de la teoria 2 sobre MPEG y MPEG-2. 
 Únicamente pasamos el valor RGB o YUV a la función, según la conversión que queramos realizar y dentro realizamos los cálculos necesarios para obtener la conversión correctamente. Finalmente las funciones devuelven la array con esl resultado correspondiente. 
@@ -51,6 +49,19 @@ print("\nYUB(","{:.1f}".format(y),",",u,",",v,"), en RGB: R = ", "{:.1f}".format
 
 
 ### EJERCICIO-2
+#### ***Resize Images***
+
+Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué un comando para poder acceder a *ffmpeg* desde el terminal y poder aplicar una reducción de tamaño de una imagen y así obtener el resultado pedido. Para ello usé el comando encontrado en la página de **FFmpeg:** *https://trac.ffmpeg.org/wiki/Scaling*.
+A continuación muestro los resultados. Yo decidí redimensionar la imagen a un tamaño de 100x100, asegurándome una reducción de calidad.
+##### **Comando + Terminal**
+<p align="center">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="600" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
+</p>
+<p >
+  <img align="left" src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="600" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
+</p>
+
+
 ### EJERCICIO-3
 ### EJERCICIO-4
 ### EJERCICIO-5
