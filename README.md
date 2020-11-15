@@ -10,7 +10,7 @@
 Para realizar este ejericio me basé en los cálculos propuestos por la dispositiva 40 de la teoria 2 sobre MPEG y MPEG-2. 
 Únicamente pasamos el valor RGB o YUV a la función, según la conversión que queramos realizar y dentro realizamos los cálculos necesarios para obtener la conversión correctamente. Finalmente las funciones devuelven la array con esl resultado correspondiente. 
 
-![](https://SixtoPineda.github.io/editor.md/examples/images/4.jpg)
+![](https://SixtoPineda.github.io/editor.md/EJERICIO-1/result.png)
 
 > Follow your heart.
 
