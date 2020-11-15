@@ -37,6 +37,7 @@ def  YUV2RGB(yuv):
 ![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/result.png)
 > Resultado.
 
+Como podemos ver en el resultado, el proceso es correcto, puesto que en pasar de RGB a YUV obtenemos unos valores que si realizamos la función inversa obtenemos el valor RGB previamente creado. 
 
 ### EJERCICIO-2
 #### ***Resize Images***
@@ -56,7 +57,7 @@ Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué 
   <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original_100x100.png" width="250">
 </p>
 
-
+En el resultado claramente se ve como la imagen de final (derecha) tiene una peor calidad, hemos bajado su resolución. 
 
 ### EJERCICIO-3
 #### ***Image into b/w***
@@ -75,6 +76,8 @@ De igual modo que en el caso anterior, busqué en internet que comando nos permi
   <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-3/320_240_original.png" width="350">
   <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-3/b_w.png" width="350">
 </p>
+
+Si nos fijamos en la imagen de color, podemos ver que aquellas partes que ésta tiene más claras o blancas son las que se traducen en la imagen b/w en blanco (1). En cambio aquellas que tiene un color más apagado u oscuro, pasan a ser negro (0). Esto se debe al threshold, si de la imegen original el valor de ese pixel esta por encima de un cierto límite pasan a ser 0 o 1. 
 
 ### EJERCICIO-4
 #### ***Run-lenght encoding***
@@ -101,11 +104,13 @@ def run_length_encoding(string):
 ![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-4/result.png)
 > Resultado.
 
+En el resultado podemos ver como cada vez que aparece un símbolo en la string, este se muestra en el resultado final junto con un valor entero, que hace referencia al número de veces que aparece dicho símbolo en la string. 
 
 ### EJERCICIO-5
 #### ***DCT***
 
-<p>pssss</p><p>Fuente:<br>https://stackoverflow.com/questions/7110899/how-do-i-apply-a-dct-to-an-image-in-python</p>
+<p>La DCT (<em>Discrete Cosine Transform</em>) se caracteriza por tener una buena capacidad de concentración o compactación de la energía o la información en pocos coeficientes a diferencia de otros métodos como la DFT. 
+En python esa función ya está implementada mediante el paquete <em>scipy</em>. Por ello al iniciar el script importamos ambas funciones, la DCT y la IDCT, a más de importar funciones como <em>imread</em> para poder leer la imagen a la que aplicar la DCT.<br>Dado que queremos aplicar la DCT a una imagen (2D), nos encontramos en un espacio bidimensional, por lo tanto al usar las funciones <em>dct2()</em> y <em>idct2()</em> deberemos aplicar la DCT dos veces, para cada una de las dimensiones.<br>Cargaremos la imegen, le aplicaremos la DCT, la IDCT y posteriormente veremos el resultado final. </p><p>Fuente:<br>https://stackoverflow.com/questions/7110899/how-do-i-apply-a-dct-to-an-image-in-python</p>
 
 
 
