@@ -55,10 +55,11 @@ Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué 
 A continuación muestro los resultados. Yo decidí redimensionar la imagen a un tamaño de 100x100, asegurándome una reducción de calidad.
 ##### **Comando + Terminal**
 <p align="center">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="600" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="400">
 </p>
 <p >
-  <img align="left" src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="600" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
+  <img align="left" src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original.png" width="250">
+  <img align="right" src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original_100x100.png" width="250">
 </p>
 
 
