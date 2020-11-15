@@ -50,10 +50,9 @@ print("\nYUB(","{:.1f}".format(y),",",u,",",v,"), en RGB: R = ", "{:.1f}".format
 
 ### EJERCICIO-2
 #### ***Resize Images***
-<p>This is a paragraph.</p>
-<p>This is<br>a paragraph<br>with line breaks.</p>
-Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué un comando para poder acceder a *ffmpeg* desde el terminal y poder aplicar una reducción de tamaño de una imagen y así obtener el resultado pedido. Para ello usé el comando encontrado en la página de **FFmpeg:** *https://trac.ffmpeg.org/wiki/Scaling*.
-A continuación muestro los resultados. Yo decidí redimensionar la imagen a un tamaño de 100x100, asegurándome una reducción de calidad.
+
+<p>Dado que habia que hacer un *resize*, con el fin de reducir la calidad, busqué un comando para poder acceder a *ffmpeg* desde el terminal y poder aplicar una reducción de tamaño de una imagen y así obtener el resultado pedido. Para ello usé el comando encontrado en la página de **FFmpeg:** *https://trac.ffmpeg.org/wiki/Scaling* <br> ffmpeg -i original.png -vf scale=100:100 original_100x100.png <br>A continuación muestro los resultados. Yo decidí redimensionar la imagen a un tamaño de 100x100, asegurándome una reducción de calidad.</p>
+
 ##### **Comando + Terminal**
 <p align="center">
   <img align="center" src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/comandos_ejercicio_2.png" width="400"/>
