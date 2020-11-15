@@ -105,7 +105,9 @@ def run_length_encoding(string):
 ### EJERCICIO-5
 #### ***DCT***
 
-<p>pssss</p>
+<p>pssss</p><p>Fuente:<br>https://stackoverflow.com/questions/7110899/how-do-i-apply-a-dct-to-an-image-in-python</p>
+
+
 
 ```python
 from scipy.fftpack import dct, idct
