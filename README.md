@@ -140,8 +140,5 @@ plt.subplot(121), plt.imshow(im), plt.axis('off'), plt.title('Original image', s
 plt.subplot(122), plt.imshow(im_IDCT), plt.axis('off'), plt.title('Reconstructed image (DCT+IDCT)', size=20)
 plt.show()
 ```
-##### **Resultados**
-<p align="center">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/original.png" width="325">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/Reconstructed_image(DCT%2BIDCT).png" width="600">
-</p>
+![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/Reconstructed_image(DCT%2BIDCT).png)
+> Resultado.
