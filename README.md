@@ -79,7 +79,7 @@ De igual modo que en el caso anterior, busqué en internet que comando nos permi
 ### EJERCICIO-4
 #### ***Run-lenght encoding***
 
-<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante <em>ollections.OrderedDict.fromkeys(string, 0)</em> procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string. Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función.<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función. </p>
+<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante <em>ollections.OrderedDict.fromkeys(string, 0)</em> procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string. Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función.<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función.</p> <p>Fuentes:<br>https://www.geeksforgeeks.org/run-length-encoding-python/<br>https://www.tutorialspoint.com/run-length-encoding-in-python</p>
 
 ```python
 import collections
