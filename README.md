@@ -13,7 +13,9 @@ Para realizar este ejericio me basé en los cálculos propuestos por la disposit
 <p align="center">
   <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/rgb_yuv.png" width="600" title="Diapo 40, teoría 2 (MPEG y MPEG-2)">
 </p>
->Diapo 40, teoría 2 (MPEG y MPEG-2).
+<p align="center">
+  <Diapo 40, teoría 2 (MPEG y MPEG-2)>
+</p>
 
 ```python
 import numpy as np
