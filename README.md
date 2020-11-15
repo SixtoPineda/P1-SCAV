@@ -61,8 +61,8 @@ A continuación muestro los resultados. Yo decidí redimensionar la imagen a un 
 ##### **Resultados**
 
 <p align="center">
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original.png" >
-  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original_100x100.png" >
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original.png" width="900">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-2/original_100x100.png" width="400">
 </p>
 
 
