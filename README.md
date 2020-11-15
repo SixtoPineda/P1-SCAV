@@ -33,16 +33,6 @@ def  YUV2RGB(yuv):
 
     return rgb
 
-# creamos los tres valores RGB para pasar a YUV
-rgb = np.array([255, 255, 255])
-y, u, v = RGB2YUV(rgb)
-print("\nRGB(255,255,255), en YUV: Y = ", "{:.1f}".format(y), "U = ","{:.1f}".format(u),"V = ", "{:.1f}".format(v) )
-
-# a modo de comprobación pasamos el output YUV de los valores RGB creados a la función que convierte el YUV en RGB
-yuv = np.array([y, u, v])
-r, g, b= YUV2RGB(yuv)
-print("\nYUB(","{:.1f}".format(y),",",u,",",v,"), en RGB: R = ", "{:.1f}".format(r), "  G = ","{:.1f}".format(g),"  B = ", "{:.1f}".format(b),"\n" )
-
 ```
 ![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-1/result.png)
 > Resultado.
@@ -89,12 +79,10 @@ De igual modo que en el caso anterior, busqué en internet que comando nos permi
 ### EJERCICIO-4
 #### ***Run-lenght encoding***
 
-<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante <em>ollections.OrderedDict.fromkeys(string, 0)</em> procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string (6).Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función (9).<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función (14). </p>
+<p>La codificación de Run-length consiste en detectar los distintos símbolos que aparecen en una serie de bytes y saber cuantas veces aparece cada uno de ellos.<br>Para a la función le pasamos una string con una série de símbolos. A partir de aquí, mediante <em>ollections.OrderedDict.fromkeys(string, 0)</em> procedemos a crear un diccionario con una lista de todos los símbolos que aparecen en la string. Hecho esto pasamos a ver cuantas veces aparece cada uno de esos símbolos de la lista en la string pasada a la función.<br>Por último procedemos a crear el output donde colocaremos el símbolo junto con un valor que hará referencia al número de veces que aparece en la string pasada a la función. </p>
 
 ```python
-# importing the collections
 import collections
-
 
 def run_length_encoding(string):
    dicc = collections.OrderedDict.fromkeys(string, 0)
@@ -109,14 +97,51 @@ def run_length_encoding(string):
 
    return (encoded_string)
 
-
-# creamos la string a codificar
-string = "F.C.BBBBaaaarccceellooonnaa"
-# llamamos a la funcion
-print("\nString: ", string, "\n\nRun length encoding resutl: ",run_length_encoding(string), "\n")
 ```
 ![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-4/result.png)
 > Resultado.
 
 
 ### EJERCICIO-5
+#### ***DCT***
+
+<p>pssss</p>
+
+```python
+from scipy.fftpack import dct, idct
+
+from skimage.io import imread
+from skimage.color import rgb2gray
+import numpy as np
+import matplotlib.pylab as plt
+
+##################### DCT & IDCT (2D)########################
+# 2D DCT
+def dct2(a):
+    return dct(dct(a.T, norm='ortho').T, norm='ortho')
+
+# 2D IDCT
+def idct2(a):
+    return idct(idct(a.T, norm='ortho').T, norm='ortho')
+
+#########################################################
+
+
+# leemos una imagen RGB y la pasamos a grayscale
+im = rgb2gray(imread('EJERCICIO-5/original.png'))
+#DCT
+im_DCT = dct2(im)
+#IDCT
+im_IDCT = idct2(im_DCT)
+
+# plot de la imagen original y la reconstruida
+plt.gray()
+plt.subplot(121), plt.imshow(im), plt.axis('off'), plt.title('Original image', size=20)
+plt.subplot(122), plt.imshow(im_IDCT), plt.axis('off'), plt.title('Reconstructed image (DCT+IDCT)', size=20)
+plt.show()
+```
+##### **Resultados**
+<p align="center">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/original.png" width="350">
+  <img src="https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/Reconstructed_image(DCT%2BIDCT).png" width="350">
+</p>
