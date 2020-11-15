@@ -140,6 +140,9 @@ im_DCT = dct2(im)
 #IDCT
 im_IDCT = idct2(im_DCT)
 
+#comprobación de que se asemejan ambas imágenes
+assert(np.allclose(im, im_IDCT) == True)
+
 # plot de la imagen original y la reconstruida
 plt.gray()
 plt.subplot(121), plt.imshow(im), plt.axis('off'), plt.title('Original image', size=20)
@@ -149,4 +152,4 @@ plt.show()
 ![](https://github.com/SixtoPineda/P1-SCAV/blob/main/EJERCICIO-5/Reconstructed_image(DCT%2BIDCT).png)
 > Resultado.
 
-<p align="justify">A simple vista no podemos ver o apreciar apenas ningún cambio, pero en realizar una comparación entre el resultado y la imagen original, podemos saber que no son del todo iguales. </p>
+<p align="justify">A simple vista no podemos ver o apreciar apenas ningún cambio, a más de que en realizar una comparación entre el resultado y la imagen original podemos ver que no estan muy lejos entre ellas. </p>
